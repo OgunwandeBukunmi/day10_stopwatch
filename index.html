@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div
+      id="app"
+      class="container w-[100vw] font-parkinsans h-[100vh] flex flex-col justify-center items-center text-white"
+    >
+      <section
+        class="min-w-[40vw] min-h-[45vh] bg-slate-700 p-8 flex flex-col justify-between items-center rounded-lg"
+      >
+        <div class="flex gap-3 p-3 justify-center items-center tracking-wide">
+          <span class="flex gap-1 text-5xl tracking-widest display" id="hour"
+            >00</span
+          >
+          <span class="flex gap-1 text-5xl tracking-widest">:</span>
+          <span class="flex gap-1 text-5xl tracking-widest display" id="minute"
+            >00</span
+          >
+          <span class="flex gap-1 text-5xl tracking-widest">:</span>
+          <span class="flex gap-1 text-5xl tracking-widest display" id="second"
+            >00</span
+          >
+        </div>
+        <div class="flex gap-5 p-3">
+          <button
+            class="border-none outline-none p-3 bg-stone-600 rounded-sm"
+            id="pause"
+          >
+            Pause
+          </button>
+          <button
+            class="border-none outline-none p-3 bg-red-500 rounded-sm"
+            id="start"
+          >
+            Start
+          </button>
+
+          <button
+            class="border-none outline-none p-3 bg-stone-600 rounded-sm"
+            id="redo"
+          >
+            Redo
+          </button>
+        </div>
+      </section>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
